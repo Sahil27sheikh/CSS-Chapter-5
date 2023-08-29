@@ -1,0 +1,53 @@
+<!-- min and max is use to provide the capicity of height and width. and you can not able to crack these order of min and max -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: red;
+            color: white;
+            min-height: 55vh;
+            max-width: 49vw;
+            padding: 12px;
+            /* min-height: 78vh; you can able to incress teh height becouse of min height is 78vh */
+            /* max-height: 12vh; you can able to incress the height above 12vh. becouse of max height is 12vh */
+            /* min-width: 15vw; you can able to decress the width below 15vw becouse of min width is 15vw */
+            /* max-width: 23vw; you can able to incress the width above 23vw becouse of max width is 23vw */
+        } 
+
+        .box2{
+            background-color: rgb(99, 245, 9);
+            color: white;
+            min-height: 55vh;
+            max-height: 80vh;
+            min-width: 20vw;
+            max-width: 49vw;
+            padding: 12px;
+            /* height: 90vh;
+            height: 10vh;
+            it is not change  */
+
+            /* width: 10vw;
+            width: 60vw;
+            it is not change */
+            
+        }
+    </style>
+    <title>min max height and width</title>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas tempore nam consequatur odio iste! Nemo quidem voluptatum reiciendis laborum ad saepe, laudantium magnam iusto illo consequatur dicta id officia ipsa praesentium repellat ex.
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas tempore nam consequatur odio iste! Nemo quidem voluptatum reiciendis laborum ad saepe, laudantium magnam iusto illo consequatur dicta id officia ipsa praesentium repellat ex.
+    </div>
+</body>
+</html>

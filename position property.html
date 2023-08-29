@@ -1,0 +1,160 @@
+<!-- Position property is the most important property. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+         
+        body{
+            height: 300vh;
+            border: 10px solid rgb(249, 5, 5);
+        }
+
+        header nav ul li {
+            display: inline-block;
+            text-decoration: none;
+            list-style: square outside;
+            margin: 0 30px;
+            padding-top: 2vh;
+        }
+
+        header {
+            background-color: black;
+            height: 8vh;
+            color: white;  
+            text-align: center;
+            font-weight: 100px;
+            font-size: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 10;  /* z-index is use for show the element upper order form other. if the z-index is more they show the more. means z-index is specefy the stack of the element */
+        }
+
+        .container {
+            background-color: red;
+            color: white;
+            height: 40vh;
+            width: 40vw;
+            margin: auto;
+            /* it is automatically adjust the margin both side */
+            position: relative;
+        }
+
+        .container p {
+            background-color: chocolate;
+            border: 4px solid firebrick;
+        }
+
+        .child {
+            background-color: aqua;
+            color: black;
+            height: 20%;
+            width: 30%;
+            text-align: center;
+            position: relative;
+            top: 207px;
+            left: 210px;
+        }
+
+        .child2 {
+            background-color: rgb(255, 0, 170);
+            color: black;
+            height: 8%;
+            width: 5%;
+            text-align: center;
+            position: relative;
+            left: 574px;
+            bottom: 112px;
+        }
+
+        .child3 {
+            background-color: rgb(195, 255, 0);
+            color: black;
+            height: 150px;
+            width: 200px;
+            text-align: center;
+            position: absolute;
+            top: 123px;
+            right: 61px;
+        }
+        .child4 {
+            background-color: rgb(255, 0, 242);
+            color: black;
+            height: 150px;
+            width: 200px;
+            text-align: center;
+            position: fixed;
+            bottom: 6px;
+            right: 6px;
+        }
+        .list ul li{
+            background-color: yellow;
+            width: 10vh;
+            height: 10vh; 
+            list-style: square inside /* url(man1.png); */
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt aliquid dolor laborum, tempore sed numquam
+            accusantium eligendi maxime excepturi omnis et placeat, id recusandae architecto delectus! Quaerat nesciunt
+            praesentium aliquam eligendi illo nostrum quod.</p>
+        <div class="child">
+            I Am Child
+        </div>
+
+        <div class="child2">
+            <b>&copy;</b>
+        </div>
+        <div class="child3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, maxime!
+        </div>
+        <div class="child4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, maxime!
+        </div>
+    </div>
+    <div class="list">
+        <ul>
+            <li>Sahil</li>
+            <li>Shahic</li>
+            <li>Saddo</li>
+        </ul>
+    </div>
+</body>
+
+</html>
+
+<!-- 1) Static position: it is default position. we do not able to move or change the position of the element if the position is static. -->
+
+<!-- 2) Reletive position: in Reletive position we are able to change the position of the element becouse the position property are able to apply on reletive position -->
+
+<!-- 3) Absulute position: it is also able to change the position of the element but the remaining element is behave like a it is not present. but it is behave like a it is here. it has positioning between there first non static element. if no more element are non static above them so it is posi between the html. -->
+
+<!-- 4) Fixed position: it is also able to change the position. it is same as Absulute position but is position between the browser window. if you are scroll the page it is not under the scrolling it has fix its position -->
+
+<!-- 5) Sticky position: it is use to fix the position of the element. we are not to able to change the position of the element. -->
+
+<!-- List style type: it is use for the style of the list. 
+list-style: type position url()
+is in this type of the list, position is the position of the list(insede or outside), uro() is use to add the image at the place of the type of the list. -->
+

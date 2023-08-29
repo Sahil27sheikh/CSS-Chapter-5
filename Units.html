@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {
+            font-size: 15px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container1{
+            background-color: aqua;
+            color: black;
+            font-size: 20px;
+            display: inline-block;
+            height: 30vh;
+            width: 100%;
+        }
+
+        .child {
+            background-color: red;
+            color: white;
+            font-size: 2em;
+            display: inline-block;
+            width: 50%;
+            height: 70%;
+            box-sizing: border-box;
+        }
+
+        .container2 {
+            background-color: greenyellow;
+            display: inline-block;
+            width: 50vw;
+            height: 70vh;
+            font-size: 5rem;
+        }
+    </style>
+    <title>Units</title>
+</head>
+
+<body>
+    <div class="container1">
+        Font size of parent element is 20px
+        <div class="child">
+            So font size of child element is 3em means 2 times of parent element.
+            Lorem ipsum dolor sit amet consectetur,
+        </div>
+    </div>
+
+    <div class="container2">
+        Font size of the html tag is 15px
+        So the font size of container2 is 5rem means 5 times larger than html tag.
+        Lorem ipsum dolor.
+    </div>
+
+</body>
+
+</html>
+
+<!-- Example of units using font size -->
+<!-- em means my parent element font size. the em unit is use to set font size of child element like a parent element. for example the font size of the parent element is 20px and you can mention the font size of child ilement is 1em so after this the font size of child element is same as parent element. and suppose the font size of the parent element is 20px and you can mention the font size of child ilement is 5em so after this the font size of child element is 5 times larger than parent element. -->
+
+<!-- rem means reletive to <html> tag font size. for example the default value of <html> tag font size on browser or your mention value of <html> tag font size in <style> tag is 20px and you can mention the font size os 1rem then your font size is 20px for more example the default value of the <html> tag is 20px and you can mention the font size 5rem then the font size of the element is 5 times larges than <html> tag value means 100px-->
+
+<!-- vw means viewport width. it is use for seen the web page and app in all small and large devices. it is automatically calculate the screen ratio of the device and place perfect place the elements. for example you can compute the width of the element is 50vw so it is automatically adjust in 50% of width of the screen in all devices. it is not compulsory to use vw only for adjust the widthe it is use also for adjust the hieght of the element. -->
+
+<!-- vh means viewport height. it is use for seen the web page and app in all small and large devices. it is automatically calculate the screen ratio of the device and place perfect place the elements. for example you can compute the height of the element is 50vh so it is automatically adjust in 50% of height of the screen in all devices. it is not compulsory to use vh only for adjust the height it is use also for adjust the width of the element. -->
+
+<!-- % unit is use for adjust the child element height and width by the size of the parent element -->
