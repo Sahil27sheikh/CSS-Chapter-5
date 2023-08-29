@@ -1,6 +1,7 @@
 <pre>
 In this repository i have added some of my CSS<b> "Min & Max property", "Height & width property",
-"Units(em, rem, vh, vw, px and %) property", "Position property", "Top, Bottom, Left & Right property with position property" and "List style & type propertys"</b> knowledge
+"Units(em, rem, vh, vw, px and %) property", "Position property", "Top, Bottom, Left & Right
+property with position property" and "List style & type propertys"</b> knowledge
 like this-
 
 &#10148; Position property in CSS:
